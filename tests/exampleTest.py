@@ -23,9 +23,9 @@ class exampleTest(unittest.TestCase):
 
         self.assertEqual(self.exampleClass.Plus(1,2),3)
 
-    def testMinusSuccess(self):
+    def testMinusFail(self):
 
-        self.assertEqual(self.exampleClass.Minus(2, 1), 1)
+        self.assertEqual(self.exampleClass.Minus(2, 1), 3)
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output="C:\Jenkins\workspace\py-test\python_unittests_xml"))
