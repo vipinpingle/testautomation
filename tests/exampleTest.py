@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "../../"))
 import xmlrunner
 import unittest
 
-from bin import example
+from src import example
 
 
 class exampleTest(unittest.TestCase):
@@ -28,4 +28,4 @@ class exampleTest(unittest.TestCase):
         self.assertEqual(self.exampleClass.Minus(2, 1), 3)
 
 if __name__ == '__main__':
-    unittest.main(testRunner=xmlrunner.XMLTestRunner(output="./python_unittests_xml"))
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output="C:\Jenkins\workspace\py-test\example\python_unittests_xml"))
